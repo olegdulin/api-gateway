@@ -3,6 +3,22 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  console.log(JSON.stringify(req));
+  res.render('index', { title: 'Express' });
+});
+
+router.post('/', function(req, res, next) {
+  console.log(JSON.stringify(req));
+  res.render('index', { title: 'Express' });
+});
+
+router.put('/', function(req, res, next) {
+  console.log(JSON.stringify(req));
+  res.render('index', { title: 'Express' });
+});
+
+router.delete('/', function(req, res, next) {
+  console.log(JSON.stringify(req));
   res.render('index', { title: 'Express' });
 });
 
